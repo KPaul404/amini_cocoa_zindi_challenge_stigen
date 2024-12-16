@@ -33,7 +33,8 @@ Higher values ensure stricter grouping but may split detections that are slightl
 IOU_THRESH = 0.65 # 0.7
 
 data_dir = os.environ["Z_DATA_DIR"]
-test_dir  = f'{data_dir}/images'
+image_parent = os.environ.get("Z_IMAGE_PARENT")
+test_dir  = f'{image_parent}/images'
 val_dir   = f'{data_dir}/val/images/2017'
 model_path = f'{data_dir}/{loc}/weights/best.pt'
 model_path2 = f'{data_dir}/{loc2}/weights/best.pt'
