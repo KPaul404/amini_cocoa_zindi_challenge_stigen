@@ -163,7 +163,7 @@ data_dir = os.environ["Z_DATA_DIR"]
 image_parent = os.environ["Z_IMAGE_PARENT"]
 fold = 0
 
-image_dir = f'{data_dir}/images'
+image_dir = f'{image_parent}/images'
 train_dir = f'{data_dir}/train-fold-new{fold}/images/2017'
 tlabel_dir= f'{data_dir}/train-fold-new{fold}/labels/2017'
 val_dir   = f'{data_dir}/val-fold-new{fold}/images/2017'
