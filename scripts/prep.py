@@ -160,7 +160,7 @@ def create_labels_func(df, label_dir, image_dir):
             print(f"\n[INFO] - {count} of {_len} done.\n", flush=True)
 
 data_dir = os.environ["Z_DATA_DIR"]
-image_parent = os.environ["Z_IMAGE_PARENT"]
+image_parent = os.environ.get("Z_IMAGE_PARENT")
 fold = 0
 
 image_dir = f'{image_parent}/images'
