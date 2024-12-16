@@ -32,7 +32,7 @@ Higher values ensure stricter grouping but may split detections that are slightl
 """
 IOU_THRESH = 0.65 # 0.7
 
-data_dir = "/home/mutonkol/ML/Ghana"
+data_dir = os.environ["Z_DATA_DIR"]
 test_dir  = f'{data_dir}/images'
 val_dir   = f'{data_dir}/val/images/2017'
 model_path = f'{data_dir}/{loc}/weights/best.pt'
