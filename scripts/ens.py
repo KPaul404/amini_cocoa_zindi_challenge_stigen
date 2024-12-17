@@ -18,8 +18,7 @@ test = pd.read_csv("data/Test.csv")
 
 loc = f'runs/detect/train{RUN}'
 loc2 = f'runs/detect/train{RUN2}'
-#loc3 = f'runs/detect/train{RUN3}'
-#loc4 = f'runs/detect/train{RUN4}'
+
 
 OVERLAP = 0.25
 THRESH = 0.1
@@ -38,19 +37,17 @@ test_dir  = f'{image_parent}/images'
 val_dir   = f'{data_dir}/val/images/2017'
 model_path = f'{data_dir}/{loc}/weights/best.pt'
 model_path2 = f'{data_dir}/{loc2}/weights/best.pt'
-#model_path3 = f'{data_dir}/{loc3}/weights/best.pt'
-#model_path4 = f'{data_dir}/{loc4}/weights/best.pt'
+
 
 img_id = ""
 #sub.loc[sub['image_id'] == img_id, 'Target'] = 0 # place holder
 
 test_imgs = test.Image_ID.to_list()
 
-#model = YOLO(model_path)
+
 model = RTDETR(model_path) #RTDETR
 model2 = RTDETR(model_path2)
-#model3 = RTDETR(model_path3)
-#model4 = RTDETR(model_path4)
+
 
 def get_areas(boxes):
     areas = []
@@ -340,4 +337,4 @@ def filter_confidence(group):
         return group
 #sub = sub.groupby('Image_ID', group_keys=False).apply(filter_confidence)
 #pdb.set_trace()
-sub.to_csv(f"{loc}/sub_{loc_str}_{RUN2}_ensemble.csv", index=False)
+sub.to_csv(f"{data_dir}/sub_{loc_str}_{RUN2}_ensemble.csv", index=False)
