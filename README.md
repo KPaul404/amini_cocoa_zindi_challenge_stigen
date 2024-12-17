@@ -12,7 +12,7 @@ Training Time: **0.094 per epoch** (8.8 hours total).
   
 📌 **[View the Kaggle Training Notebook Here](https://www.kaggle.com/code/sitwala/ghana-crop-detection-stigen/log?scriptVersionId=213461275)**.
 
-
+The Notebook will produce "sub_runs_detect_train_2_ensemble.csv" for submission in the current folder.
 ## Dependencies
 ```
 ultralytics==8.3.39
