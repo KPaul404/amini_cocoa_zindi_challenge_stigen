@@ -38,9 +38,20 @@ path_to_weights = 'path/to/weights/best.pt'
 model = RTDETR(path_to_weights)
 model.export(format="onnx")
 ```
+## Explainability with Grad-CAM
 
-## MODEL EXPLAINABILITY
-Share model and some images
+To better understand the model's predictions, Grad-CAM was applied to visualize the regions contributing most to the classification and detection of objects.
+
+### Healthy Corn Leaf
+The left image shows the object detection predictions, while the right image highlights the areas the model focused on (via Grad-CAM).
+
+<img src="images/healthy_corn.png" alt="Healthy Corn Detection" width="70%">
+
+### Tomato Leaf Blight
+The left image shows the detected regions for "Tomato Late Blight," and the right image demonstrates Grad-CAM visualizations pinpointing the critical areas.
+
+<img src="images/tomatoe_blight.png" alt="Tomato Blight Detection" width="70%">
+
 
 ## Authors
 1. [ngoym](https://github.com/ngoym)
