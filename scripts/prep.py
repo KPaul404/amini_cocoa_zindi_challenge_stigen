@@ -17,8 +17,8 @@ def is_unique_crop(cls):
     return len(set(names))
 
 def get_unique_crop(cls):
-    names = [c.split("_")[0] for c in cls]
-    return list(set(names))[0]
+    names = [c.split("_")[0] for c in list(cls)]
+    return set(names)
 
 def list0(x):
     return '-'.join(list(x))
