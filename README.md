@@ -6,10 +6,12 @@ We present our solution for the Ghana Crop Disease Detection Challenge Solution 
 The solution was an ensemble of two RT-DETR [(Realtime Detection Transformer)](https://docs.ultralytics.com/models/rtdetr/#how-does-rt-detr-support-adaptable-inference-speed-for-different-real-time-applications) models using ultralytics framework. One model is trained from a 20 fold split and the other from a 24 fold split. The models are ensembled using [Weighted boxes fusion (WBF)](https://learnopencv.com/weighted-boxes-fusion/)
 
 ## TRAINING DETAILS
-The model is trained on one T4 GPU 
-Training Time: 0.094 per epoch (8.8 hour total)
+ ⚡ **Training Notebook**  
+ The model is trained on one T4 GPU.  
+Training Time: **0.094 per epoch** (8.8 hours total).  
+  
+📌 **[View the Kaggle Training Notebook Here](https://www.kaggle.com/code/sitwala/ghana-crop-detection-stigen/log?scriptVersionId=213461275)**.
 
-### [Link To Kaggle Training Notebook Here](https://www.kaggle.com/code/sitwala/ghana-crop-detection-stigen/log?scriptVersionId=213461275)
 
 ## Dependencies
 ```
