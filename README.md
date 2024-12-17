@@ -17,5 +17,5 @@ Test the stuff discusses here: https://docs.ultralytics.com/models/rtdetr/
 Share model and some images
 
 ## Authors
-[ngoym](https://github.com/ngoym)
-[sitwalam](https://github.com/SitwalaM)
+1. [ngoym](https://github.com/ngoym)
+2. [sitwalam](https://github.com/SitwalaM)
