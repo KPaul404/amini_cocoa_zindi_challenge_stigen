@@ -12,6 +12,7 @@ export Z_N_SPLITS=24
 export Z_MOSAIC=0.5
 python scripts/prep.py
 python scripts/main.py
+echo "Full Training complete"
 
 export Z_RUN_1=""
 export Z_RUN_2="2"
