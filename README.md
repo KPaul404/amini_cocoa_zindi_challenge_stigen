@@ -10,6 +10,7 @@ The solution was an ensemble of two RT-DETR [(Realtime Detection Transformer)](h
  The model is trained on one T4 GPU.  
 Training Time: **0.094 per epoch** (8.8 hours total).  
 Total Time Training and Inference on Test: 9.23 hours
+Note that Kaggle runtime is T4x2 but only one is used device:0 
   
 📌 **[Kaggle Training Notebook Here](https://www.kaggle.com/code/sitwala/ghana-crop-detection-stigen/notebook)**.
 
