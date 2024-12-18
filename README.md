@@ -1,5 +1,5 @@
 # [Ghana Crop Disease Detection Challenge Solution](https://zindi.africa/competitions/ghana-crop-disease-detection-challenge)
-We present our solution for the Ghana Crop Disease Detection Challenge Solution on Zindi, currently placed 7th Place
+We present our solution for the Ghana Crop Disease Detection Challenge Solution on Zindi, currently placed 7th.
 
 ## Model Summary
 
