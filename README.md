@@ -17,7 +17,7 @@ The Notebook will produce "sub_runs_detect_train_2_ensemble.csv" for submission 
 ## Dependencies
 ```
 ultralytics==8.3.39
-torch==2.4.0
+torch=>2.4.0
 ensemble_boxes
 ```
 ## Code Usage
