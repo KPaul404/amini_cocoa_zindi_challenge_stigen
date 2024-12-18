@@ -54,6 +54,11 @@ The left image shows the detected regions for "Tomato Late Blight," and the righ
 
 <img src="images/tomatoe_blight.png" alt="Tomato Blight Detection" width="70%">
 
+## WRONG ANNOTATIONS
+Wrong annotations are prevalent in the training dataset, which will limit the quality of the models. We recommend using a higher-quality dataset to improve the models. Below, we highlight incorrect labels that depict two different plant types on a single plant.
+<img src="images/tomatoe_blight.png" alt="Tomato Blight Detection" width="70%">
+
+
 
 ## Authors
 1. [ngoym](https://github.com/ngoym)
