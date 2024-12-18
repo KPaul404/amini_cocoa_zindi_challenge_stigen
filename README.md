@@ -43,7 +43,7 @@ model.export(format="onnx")
 ## Explainability with Grad-CAM
 
 To better understand the model's predictions, Grad-CAM was applied to visualize the regions contributing most to the classification and detection of objects.
-
+📌 **[GRAD-CA Notebook Here](https://github.com/SitwalaM/ghana_crop_zindi_challenge_stigen/blob/main/notebooks/grad_cam_colab.ipynb)**
 ### Healthy Corn Leaf
 The left image shows the object detection predictions, while the right image highlights the areas the model focused on (via Grad-CAM).
 
