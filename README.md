@@ -26,7 +26,7 @@ git clone https://github.com/SitwalaM/ghana_crop_zindi_challenge_stigen.git
 cd ./ghana_crop_zindi_challenge_stigen
 pip install -r requirements.txt
 ```
-make sure Z_IMAGE_PARENT in [reproduce.sh](https://github.com/SitwalaM/ghana_crop_zindi_challenge_stigen/blob/main/scripts/reproduce.sh) points to the parent directory of the images
+make sure Z_IMAGE_PARENT in [reproduce.sh](https://github.com/SitwalaM/ghana_crop_zindi_challenge_stigen/blob/main/scripts/reproduce.sh) points to the parent directory of the images (must have "images/" folder")
 The Training can be run and will produce the submission file:
 ```bash
 bash ./scripts/reproduce.sh
