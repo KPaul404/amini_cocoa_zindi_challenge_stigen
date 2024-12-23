@@ -5,8 +5,8 @@ export Z_MOSAIC=1.0
 python scripts/prep.py
 python scripts/main.py
 
-rm -rf data/train-fold-new*
-rm -rf data/val-fold-new*
+rm -rf train-fold-new*
+rm -rf val-fold-new*
 
 export Z_N_SPLITS=24
 export Z_MOSAIC=0.5
