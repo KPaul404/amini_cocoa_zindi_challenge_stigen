@@ -91,9 +91,9 @@ def create_labels_func(df, label_dir, image_dir):
     count = 0
     _len = len(df)
     cat_dict = {
-        "healthy": 2,
         "anthracnose": 0,
         "cssvd": 1,
+        "healthy": 2,
     }
 
     for i in range(len(df)):
