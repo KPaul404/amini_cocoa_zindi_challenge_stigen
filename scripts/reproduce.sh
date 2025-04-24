@@ -1,5 +1,5 @@
 export Z_DATA_DIR=$(pwd)
-export Z_IMAGE_PARENT="/kaggle/input/ghana-crop-disease/"
+export Z_IMAGE_PARENT="/kaggle/input/amini-cocoa-contamination-dataset"
 export Z_N_SPLITS=10
 export Z_MOSAIC=1.0
 python scripts/prep.py
