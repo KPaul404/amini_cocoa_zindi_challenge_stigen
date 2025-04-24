@@ -221,9 +221,9 @@ if create_labels:
 
 config = {
     'names': [
-        "healthy": 2,
         "anthracnose": 0,
         "cssvd": 1,
+        "healthy": 2,
     ],
     'nc': 3,
     'train': f'{train_dir}',
