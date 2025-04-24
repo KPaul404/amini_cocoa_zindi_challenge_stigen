@@ -91,29 +91,9 @@ def create_labels_func(df, label_dir, image_dir):
     count = 0
     _len = len(df)
     cat_dict = {
-        'Corn_Cercospora_Leaf_Spot': 0,
-        'Tomato_Septoria': 1,
-        'Tomato_Late_Blight': 2,
-        'Corn_Streak': 3,
-        'Tomato_Healthy': 4,
-        'Pepper_Septoria': 5,
-        'Pepper_Leaf_Mosaic': 6,
-        'Tomato_Early_Blight': 7,
-        'Pepper_Bacterial_Spot': 8,
-        'Corn_Common_Rust': 9,
-        'Corn_Healthy': 10,
-        'Pepper_Leaf_Curl': 11,
-        'Tomato_Fusarium': 12,
-        'Pepper_Healthy': 13,
-        'Pepper_Late_Blight': 14,
-        'Pepper_Leaf_Blight': 15,
-        'Tomato_Bacterial_Spot': 16,
-        'Pepper_Cercospora': 17,
-        'Pepper_Fusarium': 18,
-        'Tomato_Leaf_Curl': 19,
-        'Corn_Northern_Leaf_Blight': 20,
-        'Tomato_Mosaic': 21,
-        'Pepper_Early_Blight': 22,
+        "healthy": 2,
+        "anthracnose": 0,
+        "cssvd": 1,
     }
 
     for i in range(len(df)):
@@ -241,31 +221,11 @@ if create_labels:
 
 config = {
     'names': [
-        'Corn_Cercospora_Leaf_Spot',
-        'Tomato_Septoria',
-        'Tomato_Late_Blight',
-        'Corn_Streak',
-        'Tomato_Healthy',
-        'Pepper_Septoria',
-        'Pepper_Leaf_Mosaic',
-        'Tomato_Early_Blight',
-        'Pepper_Bacterial_Spot',
-        'Corn_Common_Rust',
-        'Corn_Healthy',
-        'Pepper_Leaf_Curl',
-        'Tomato_Fusarium',
-        'Pepper_Healthy',
-        'Pepper_Late_Blight',
-        'Pepper_Leaf_Blight',
-        'Tomato_Bacterial_Spot',
-        'Pepper_Cercospora',
-        'Pepper_Fusarium',
-        'Tomato_Leaf_Curl',
-        'Corn_Northern_Leaf_Blight',
-        'Tomato_Mosaic',
-        'Pepper_Early_Blight',
+        "healthy": 2,
+        "anthracnose": 0,
+        "cssvd": 1,
     ],
-    'nc': 23,
+    'nc': 3,
     'train': f'{train_dir}',
     'val': f'{val_dir}'
 }
