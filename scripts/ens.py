@@ -168,29 +168,9 @@ def run_wbf(bboxes, confs,labels, image_size, iou_thr=0.50, skip_box_thr=0.0001,
 
 loc_str = loc.replace("/","_")
 names_ = {
-        'Corn_Cercospora_Leaf_Spot': 0,
-        'Tomato_Septoria': 1,
-        'Tomato_Late_Blight': 2,
-        'Corn_Streak': 3,
-        'Tomato_Healthy': 4,
-        'Pepper_Septoria': 5,
-        'Pepper_Leaf_Mosaic': 6,
-        'Tomato_Early_Blight': 7,
-        'Pepper_Bacterial_Spot': 8,
-        'Corn_Common_Rust': 9,
-        'Corn_Healthy': 10,
-        'Pepper_Leaf_Curl': 11,
-        'Tomato_Fusarium': 12,
-        'Pepper_Healthy': 13,
-        'Pepper_Late_Blight': 14,
-        'Pepper_Leaf_Blight': 15,
-        'Tomato_Bacterial_Spot': 16,
-        'Pepper_Cercospora': 17,
-        'Pepper_Fusarium': 18,
-        'Tomato_Leaf_Curl': 19,
-        'Corn_Northern_Leaf_Blight': 20,
-        'Tomato_Mosaic': 21,
-        'Pepper_Early_Blight': 22,
+        "healthy": 2,
+        "anthracnose": 0,
+        "cssvd": 1,
     }
 names = {v: k for k, v in names_.items()}
 if TEST:
